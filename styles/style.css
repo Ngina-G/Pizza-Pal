@@ -1,7 +1,83 @@
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 100;
+    background-image: linear-gradient(to right,#e53a02, #fe8a07);
 }
+/*navbar*/
+.navBar{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+  .navBar a{
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: #000;
+    text-decoration: none;
+    transition: all .5s;
+    margin-top: 20px;
+  }
+  .navBar a:hover{
+      color: #fff;
+  }
+
+  /*header/banner*/
+/* header{
+} */
 h1{
     font-family: 'Monoton', cursive;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 10%;
 }
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 95vh;
+    overflow: hidden;
+}
+.imageBanner{
+    width: 60vw;
+    height: auto;
+}
+#bannerContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#bannerDesc{
+    font-family: 'Bangers', cursive;
+    font-weight: 400;
+    font-size: 2em;
+    color: #221c1c;
+    text-align: center;
+    margin-top: -1em;
+}
+@media screen and (max-width: 480px) {
+    h1{
+        font-family: 'Monoton', cursive;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 3em;
+        text-align: center;
+    }
+    .imageBanner{
+        width: 100vw;
+        height: 40vh;
+    }
+    #bannerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: -15em;
+    }
+  }
