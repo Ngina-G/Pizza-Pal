@@ -2,8 +2,21 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     background-image: linear-gradient(to right,#e53a02, #fe8a07);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /*navbar*/
+.logo{
+    font-family: 'Monoton', cursive;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: -4em ;
+}
+a{
+    margin-right: 10em;
+}
 .navBar{
     overflow: hidden;
     display: flex;
@@ -27,8 +40,6 @@ body{
   }
 
   /*header/banner*/
-/* header{
-} */
 h1{
     font-family: 'Monoton', cursive;
     color: #ffffff;
@@ -46,7 +57,7 @@ h1{
 }
 .imageBanner{
     width: 60vw;
-    height: auto;
+    height: 85vh;
 }
 #bannerContent{
     display: flex;
@@ -62,22 +73,23 @@ h1{
     text-align: center;
     margin-top: -1em;
 }
-@media screen and (max-width: 480px) {
-    h1{
-        font-family: 'Monoton', cursive;
-        color: #ffffff;
-        font-weight: 400;
-        font-size: 3em;
-        text-align: center;
+
+    @media screen and (max-width: 480px) {
+        h1{
+            font-family: 'Monoton', cursive;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 3em;
+            text-align: center;
+        }
+        .imageBanner{
+            width: 100vw;
+            height: 40vh;
+        }
+        #bannerContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin-top: -15em;
+        }
     }
-    .imageBanner{
-        width: 100vw;
-        height: 40vh;
-    }
-    #bannerContent{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        margin-top: -15em;
-    }
-  }
