@@ -93,3 +93,9 @@ h1{
             margin-top: -15em;
         }
     }
+
+/*main content*/
+main{
+    background-color: #fff;
+    width: 100vw;
+}
