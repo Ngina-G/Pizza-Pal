@@ -1,9 +1,7 @@
 body{
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     background-image: linear-gradient(to right,#e53a02, #fe8a07);
-    margin-left: 10px;
-    margin-right: 10px;
 }
 /*navbar*/
 .logo{
@@ -90,12 +88,54 @@ h1{
             display: flex;
             flex-direction: column;
             justify-content: start;
-            margin-top: -15em;
         }
     }
 
 /*main content*/
 main{
+    overflow: hidden;
+    width: 97.5vw;
+}
+/*pizza items*/
+.shopSection{
     background-color: #fff;
-    width: 100vw;
+    border-radius: 24px;
+
+}
+.pizza1{
+    display: flex;
+    padding: 7%;
+    height: 50vh;
+    border: solid 1px grey;
+    border-radius: 24px;
+    transition: all .3s;
+}
+.pizza1:hover{
+    transform: scale(1.02,1.02);
+    border: solid 1px grey;
+}
+.pizza1Content{
+    margin: 3%;
+    margin-left: 86px;
+    text-align: center;
+}
+.pizza1Image{
+    width: 40vw;
+}
+.pizza1Form{
+    padding: 1em;
+}
+.pizza1Btn{
+    margin: 1em;
+    color: #fff;
+    background-color: #e53a02;
+    border: none;
+    border-radius: 4px;
+    transition: all .3s;
+    padding: .7rem;
+    margin-top: -1em;
+}
+.pizza1Btn:hover{
+    background-color: #fe8a07;
+    transform: scale(1.1,1.1);
 }
