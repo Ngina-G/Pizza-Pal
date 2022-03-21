@@ -42,18 +42,37 @@
                     <p class="pizza1Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non, cupiditate incidunt aliquam saepe, voluptatum mollitia quibusdam minus sunt suscipit nemo quasi neque rerum perferendis magnam! Optio dolorem sapiente ad!</p>
                     <div class="pizza1Form">
                         <h4 style="font-family: 'Bangers', cursive; font-weight: 400; font-size: 1.5em;">Sizes</h4>
-                        <form action="" class="pizzaForm" id="pizza1Form">
+                        <form action="" class="pizzaForm">
                             <input type="button" value="small" class="pizza1Btn">
-                            <input type="button" value="medium" class="pizza1Btn">
+                            <input type="button" value="medi" class="pizza1Btn">
                             <input type="button" value="large" class="pizza1Btn">
                         </form>
 
-                        <form action="" class="pizzaForm" id="pizza1Form">
-                            <input type="button" value="small" class="pizza1Btn">
-                            <input type="button" value="medium" class="pizza1Btn">
-                            <input type="button" value="large" class="pizza1Btn">
-                        </form>
+                        <div class="pizzaExtras">
+                            <div action="" class="selectCont">
+                                <h4 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 400; font-size: .8rem; margin-bottom: -.5em;">Extra Toppings</h4>
+                                <select>
+                                    <option type="button" value="olives" class="select-items">none</option>
+                                    <option type="button" value="olives" class="select-items">olives</option>
+                                    <option type="button" value="cheese" class="select-items">cheese</option>
+                                    <option type="button" value="mince" class="select-items">mince</option>
+                                </select>
+                            </div>
 
+                            <div action="" class="selectCont">
+                                <h4 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 400; font-size: .8rem; margin-bottom: -.5em;">Crust</h4>
+                                <select>
+                                    <option type="button" value="cheese" class="select-items">classic</option>
+                                    <option type="button" value="olives" class="select-items">thin</option>
+                                    <option type="button" value="mince" class="select-items">thick</option>
+                                </select>
+                                
+                            </div>
+                            
+                        </div>
+                        <form action="" method="get">
+                            <input type="button" value="order" class="orderBtn" onclick="orderValues()">
+                        </form>
                     </div> 
                 </div>
             </div>

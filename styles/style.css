@@ -102,7 +102,7 @@ main{
     font-weight: 400;
     text-align: center;
     font-size: 3em;
-    margin-top: .5em;
+    margin-top: -.3em;
 }
 .pizza1{
     background-color: #fff;
@@ -112,7 +112,7 @@ main{
     padding-left: 7%;
     padding-bottom: 7%;
     padding-top: 3%;
-    height: 50vh;
+    height: 60vh;
     border: solid 1px grey;
     border-radius: 24px;
     transition: all .3s;
@@ -123,7 +123,9 @@ main{
     border-radius: 24px;
 }
 .pizza1Content{
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: -3%;
     margin-left: 86px;
     text-align: center;
 }
@@ -133,8 +135,9 @@ main{
 .pizza1Image{
     width: 60vw;
 }
-/* .pizza1Form{
-} */
+.pizza1Form{
+    align-self: center;
+} 
 .pizza1Btn{
     margin: 1em;
     color: #fff;
@@ -148,4 +151,38 @@ main{
 .pizza1Btn:hover{
     background-color: #fe8a07;
     transform: scale(1.1,1.1);
+}
+
+/*selection extra items*/
+.selectCont {
+    position: relative;
+    font-weight: 400;
+    font-size:1em;
+  }
+.pizzaExtras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.selectCont select {
+    display: flex;
+    background-color: #e53a02;
+    border: 6px solid transparent;
+    border-radius: 4px;
+    border-color:transparent transparent transparent;
+    cursor: pointer;
+    user-select: none;
+    margin: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+.orderBtn{
+    width: 220px;    
+    padding: .6em;
+    background-image: linear-gradient(to top left, #e62424, #fe8a07, #feb007 );
+    border: none;
+    margin-top: 1em;
+}
+.orderBtn:hover{
+    background-image: linear-gradient(to bottom right, #e62424, #fe8a07, #feb007 );
 }
