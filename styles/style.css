@@ -133,9 +133,8 @@ main{
 .pizza1Image{
     width: 60vw;
 }
-.pizza1Form{
-    padding: 1em;
-}
+/* .pizza1Form{
+} */
 .pizza1Btn{
     margin: 1em;
     color: #fff;
