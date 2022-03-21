@@ -3,6 +3,11 @@ const pizzaSize= {
     medi: 1000,
     large: 1200
 };
+
+let button= document.querySelector('.orderBtn');
+button.addEventListener("click", function (x) {
+    x.preventDefault(); })
+
 // TOPPINGS
 const toppingsSmall= {
     none: 0,
@@ -23,26 +28,47 @@ const toppingsLarge= {
     mince: 300
 }
 // CRUST
-const crustClassic= {
+const crustSmall= {
     classic: 125,
     thin: 95,
     thick:180
 }
-const crustThin= {
+const crustMedi= {
     classic: 115,
     thin: 75,
     thick:155
 }
-const crustThick= {
+const crustLarge= {
     classic: 185,
     thin: 155,
     thick: 205
 }
 
-function pizzaSize(){
-    let pizzaButton= document.querySelector("input").val
 
-    if(pizzaButton= "small"){
-    toppingsSmall.
-    }
+// let pizzaButton= document.querySelector(".pizza1Btn")
+// pizzaButton.addEventListener("click",function (){
+
+//     let toppings= document.querySelector(".toppings").val
+//     let toppingsSm= Object.getOwnPropertyNames(toppingsSmall)
+
+//         if(pizzaButton.value()= "small"){
+//             console.log(toppingsSmall && crustSmall);
+//             return toppingsSmall && crustSmall
+//         }
+// })
+
+function Pizza(size, toppings, crust, total, orderNo) {
+    this.size = size;
+    this.toppings = toppings;
+    this.crust = crust;
+    this.total = total;
+    this.orderNo = orderNo;
+  }
+$('.piza1Btn').click(function() {
+    var sizeOfPizza = $(".pizzaForm option:selected").val();
+    var toppingsOfPizza = $(".toppings option:selected").val();
+    var crustOfPizza = $(".crust option:selected").val();
+    var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+    order = order + 1;
+    grandTotal = grandTotal + total;
 }
