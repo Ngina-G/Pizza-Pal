@@ -1,6 +1,11 @@
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+}
+header{
+    background-image: linear-gradient(to right,#e53a02, #fe8a07);
+}
+main{
     background-image: linear-gradient(to right,#e53a02, #fe8a07);
 }
 /*navbar*/
@@ -16,6 +21,8 @@ a{
     margin-right: 10em;
 }
 .navBar{
+    background-color: #180606;
+    margin-bottom: .5em;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -28,13 +35,13 @@ a{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all .5s;
     margin-top: 20px;
   }
   .navBar a:hover{
-      color: #fff;
+      color: #e53a02;
   }
 
   /*header/banner*/
@@ -105,7 +112,8 @@ main{
     margin-top: -.3em;
 }
 .pizza1{
-    background-color: #fff;
+    background-color: #180606;
+    color: #fff;
     margin: 1rem;
     display: flex;
     padding-left: 7%;
@@ -113,7 +121,6 @@ main{
     padding-bottom: 7%;
     padding-top: 3%;
     height: 60vh;
-    border: solid 1px grey;
     border-radius: 24px;
     transition: all .3s;
 }
@@ -186,3 +193,29 @@ main{
 .orderBtn:hover{
     background-image: linear-gradient(to bottom right, #e62424, #fe8a07, #feb007 );
 }
+
+/* contacts section */
+.contactsCont{
+    text-align: center;
+}
+.fa{
+    padding: 10px;
+    margin: 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #e62424;
+    color: white;
+    transition: all 0.3s;
+  }
+  .fa:hover{
+    background-color: #fe8a07;
+    border: 1px solid white;
+  }
+  #contactsSection{
+    height: 35vh;
+    color: #fff;
+    text-align: center;
+    background-color: #180606;
+    margin-top: 3em;
+  }
