@@ -29,7 +29,6 @@ let a = document.getElementById('selectSize1');
 let sizePizza = a.options[a.selectedIndex].value;
 let b = document.getElementById('selectToppings');
 let toppingsPizza = b.options[b.selectedIndex].value;
-console.log(toppingsPizza);
 // let c = document.getElementsByClass('selectSize');
 // let crustPizza = c.options[c.selectedIndex].value;
 
@@ -49,16 +48,10 @@ function pizzaValue1(){
   let sizePizza2 = d.options[d.selectedIndex].value;
 
   if(pizzaType1 === "small"){
-    console.log(pizzaType1);
-    console.log(sizePizza1);
     return sizePizza1;
   } else if(pizzaType1 === "medi"){
-    console.log(pizzaType1)
-    console.log(sizePizza1);
     return sizePizza1;
   }else if(pizzaType1 === "large"){
-    console.log(pizzaType1);
-    console.log(sizePizza1);
     return sizePizza1;
   }
 }
@@ -71,16 +64,10 @@ function pizzaValue2(){
   let sizePizza2 = d.options[d.selectedIndex].value;
 
   if(pizzaType2 === "small"){
-    console.log(pizzaType2);
-    console.log(sizePizza2);
     return sizePizza2;
   } else if(pizzaType2 === "medi"){
-    console.log(pizzaType2)
-    console.log(sizePizza2);
     return sizePizza2;
   }else if(pizzaType2 === "large"){
-    console.log(pizzaType2);
-    console.log(sizePizza2);
     return sizePizza2;
   }
 }
@@ -93,16 +80,10 @@ function pizzaValue3(){
   let sizePizza3 = f.options[f.selectedIndex].value;
 
   if(pizzaType3 === "small"){
-    console.log(pizzaType3);
-    console.log(sizePizza3);
     return sizePizza3;
   } else if(pizzaType3 === "medi"){
-    console.log(pizzaType3)
-    console.log(sizePizza3);
     return sizePizza3;
   }else if(pizzaType3 === "large"){
-    console.log(pizzaType3);
-    console.log(sizePizza3);
     return sizePizza3;
   }
 }
@@ -114,16 +95,10 @@ function pizzaValue4(){
   let sizePizza4 = h.options[h.selectedIndex].value;
 
   if(pizzaType4 === "small"){
-    console.log(pizzaType4);
-    console.log(sizePizza4);
     return sizePizza4;
   } else if(pizzaType4 === "medi"){
-    console.log(pizzaType4)
-    console.log(sizePizza4);
     return sizePizza4;
   }else if(pizzaType4 === "large"){
-    console.log(pizzaType4);
-    console.log(sizePizza4);
     return sizePizza4;
   }
 }
@@ -138,13 +113,10 @@ function toppingsValue1(){
   let toppingsType1 = d.options[d.selectedIndex].text;
 
   if(toppingsType1 === "olives"){
-    console.log(toppingsPizza1)
     return toppingsPizza1;
   } else if(toppingsType1 === "cheese"){
-    console.log(toppingsPizza1);
     return toppingsPizza1;
   } else if(toppingsPizza1 === "onions"){
-    console.log(toppingsPizza1);
     return toppingsPizza1;
   } else{
     return 0;
@@ -158,13 +130,10 @@ function toppingsValue2(){
   let toppingsType2 = d.options[d.selectedIndex].text;
 
   if(toppingsType2 === "olives"){
-    console.log(toppingsPizza2)
     return toppingsPizza2;
   } else if(toppingsType2 === "cheese"){
-    console.log(toppingsPizza2);
     return toppingsPizza2;
   } else if(toppingsPizza2 === "onions"){
-    console.log(toppingsPizza2);
     return toppingsPizza2;
   } else{
     return 0;
@@ -179,13 +148,10 @@ function toppingsValue3(){
   let toppingsType3 = d.options[d.selectedIndex].text;
 
   if(toppingsType3 === "olives"){
-    console.log(toppingsPizza3)
     return toppingsPizza3;
   } else if(toppingsType3 === "cheese"){
-    console.log(toppingsPizza3);
     return toppingsPizza3;
   } else if(toppingsPizza3 === "onions"){
-    console.log(toppingsPizza3);
     return toppingsPizza3;
   } else{
     return 0;
@@ -220,13 +186,10 @@ function crustValue1(){
   let crustType = f.options[f.selectedIndex].text;
 
   if(crustType === "classic"){
-    console.log(crustPizza)
     return crustPizza;
   } else if(crustType === "thin"){
-    console.log(crustPizza);
     return crustPizza;
   } else if(crustType === "thick"){
-    console.log(crustPizza);
     return crustPizza;
   } else{
     return 500;
@@ -240,13 +203,10 @@ function crustValue2(){
   let crustType2 = f.options[f.selectedIndex].text;
 
   if(crustType2 === "classic"){
-    console.log(crustPizza2)
     return crustPizza2;
   } else if(crustType2 === "thin"){
-    console.log(crustPizza2);
     return crustPizza2;
   } else if(crustType2 === "thick"){
-    console.log(crustPizza2);
     return crustPizza2;
   } else{
     return 500;
@@ -260,13 +220,10 @@ function crustValue3(){
   let crustType3 = f.options[f.selectedIndex].text;
 
   if(crustType3 === "classic"){
-    console.log(crustPizza3)
     return crustPizza3;
   } else if(crustType3 === "thin"){
-    console.log(crustPizza3);
     return crustPizza3;
   } else if(crustType3 === "thick"){
-    console.log(crustPizza3);
     return crustPizza3;
   } else{
     return 500;
@@ -280,27 +237,38 @@ function crustValue4(){
   let crustType4 = f.options[f.selectedIndex].text;
 
   if(crustType4 === "classic"){
-    console.log(crustPizza4)
     return crustPizza4;
   } else if(crustType4 === "thin"){
-    console.log(crustPizza4);
     return crustPizza4;
   } else if(crustPizza4 === "thick"){
-    console.log(crustType4);
     return crustPizza4;
   } else{
     return 500;
   }
 }
 
-// let pizzaVal1 =pizzaValue1();
 
-// function orderValues(){
-//   let final = parseInt(pizzaValue1()) + parseInt(toppingsValue1()) + parseInt(crustValue());
-//   console.log(final);
-//   return final;
-// }
 
+function orderValues1(){
+  let final = parseInt(pizzaValue1()) + parseInt(toppingsValue1()) + parseInt(crustValue1());
+  console.log(final);
+  return final;
+}
+function orderValues2(){
+  let final = parseInt(pizzaValue2()) + parseInt(toppingsValue2()) + parseInt(crustValue2());
+  console.log(final);
+  return final;
+}
+function orderValues3(){
+  let final = parseInt(pizzaValue3()) + parseInt(toppingsValue3()) + parseInt(crustValue3());
+  console.log(final);
+  return final;
+}
+function orderValues4(){
+  let final = parseInt(pizzaValue4()) + parseInt(toppingsValue4()) + parseInt(crustValue4());
+  console.log(final);
+  return final;
+}
 // console.log(orderValues());
 // function toppings(){
 //     alert(pizzaVal)
