@@ -39,12 +39,13 @@
             <div class="pizza1">
                 <img src="/assets/fernando-andrade-_P76trHTWDE-unsplash.jpg" alt="pizza 1" class="pizza1Image">
                 <div class="pizza1Content">
-                    <h3 style="font-family:'Bangers', cursive; font-weight: 400; font-size: 2em; color: #fe8a07;">Pepperoni Pizza</h3>
+                    <h3 id="Pep" style="font-family:'Bangers', cursive; font-weight: 400; font-size: 2em; color: #fe8a07;">Pepperoni Pizza</h3>
                     <p class="pizza1Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non, cupiditate incidunt aliquam saepe, voluptatum mollitia quibusdam minus sunt suscipit nemo quasi neque rerum perferendis magnam! Optio dolorem sapiente ad!</p>
                     <div class="pizza1Form">
                         <h4 style="font-family: 'Bangers', cursive; font-weight: 400; font-size: 1.5em;">Sizes</h4>
                         <div class="pizzaForm">
                             <select id="selectSize1" onchange="pizzaValue1()">
+                                <option label="" value="" class=" select-items pizza1Btn"></option>
                                 <option label="small" value="700" class=" select-items pizza1Btn">small</option>
                                 <option label="medi" value="1000" class=" select-items pizza1Btn">medi</option>
                                 <option label="large" value="1200" class=" select-items pizza1Btn">large</option>
@@ -89,6 +90,7 @@
                         <h4 style="font-family: 'Bangers', cursive; font-weight: 400; font-size: 1.5em;">Sizes</h4>
                         <div class="pizzaForm">
                             <select id="selectSize2" onchange="pizzaValue2()">
+                                <option label="" value="" class=" select-items pizza1Btn"></option>
                                 <option value="700" label="small" class=" select-items pizza1Btn">small</option>
                                 <option value="1000" label="medi" class=" select-items pizza1Btn">medi</option>
                                 <option value="1200" label="large" class=" select-items pizza1Btn">large</option>
@@ -134,6 +136,7 @@
                         <h4 style="font-family: 'Bangers', cursive; font-weight: 400; font-size: 1.5em;">Sizes</h4>
                         <div class="pizzaForm">
                             <select id="selectSize3" onchange="pizzaValue3()">
+                                <option label="" value="" class=" select-items pizza1Btn"></option>
                                 <option value="700" label="small" class=" select-items pizza1Btn">small</option>
                                 <option value="1000" label="medi" class=" select-items pizza1Btn">medi</option>
                                 <option value="1200" label="large" class=" select-items pizza1Btn">large</option>
@@ -179,6 +182,7 @@
                         <h4 style="font-family: 'Bangers', cursive; font-weight: 400; font-size: 1.5em;">Sizes</h4>
                         <div class="pizzaForm">
                             <select id="selectSize4" onchange="pizzaValue4()">
+                                <option label="" value="" class=" select-items pizza1Btn"></option>
                                 <option value="700" label="small" class=" select-items pizza1Btn">small</option>
                                 <option value="1000" label="medi" class=" select-items pizza1Btn">medi</option>
                                 <option value="1200" label="large" class=" select-items pizza1Btn">large</option>
@@ -216,47 +220,15 @@
             </div> 
         </div> 
         
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Order No.</th>
-                <th scope="col">Pizza Size</th>
-                <th scope="col">Toppings</th>
-                <th scope="col">Crust</th>
-                <th scope="col">Total</th>
-              </tr>
-            </thead>
-            <tbody id="pizza">
-              <tr>
-                <th scope="row">1</th>
-                <td id="size"></td>
-                <td id="toppings"></td>
-                <td id="crust"></td>
-                <td id="total"></td>
-              </tr>
-            </tbody>
-          </table>
-    
-          <div class="additional-buttons">
-            <div class="text-center">
-              <button class="btn btn-info add-pizza" type="submit">Add Another</button>
-              <div class="additional-info">
-                <h3>The total is: <span></span></h3>
-                <h5>Would you like delivery for an additional <em>200</em>?</h5>
-                <h4>Your order has been received! We are dispatching our rider to <span></span></h4>
-                <div class="location text-center">
-                  <input type="text" size="30" placeholder="Where do you live?" required />
-                  <button class="btn btn-info complete" type="submit">Complete</button>
-                </div>
-              </div>
-              <br>
-              <button class="btn btn-info yes" type="submit">Yes</button>
-              <button class="btn btn-info no" type="submit">No</button>
-            </div>
-            <div class="text-right">
-              <button class="btn btn-info check-out" type="submit">Checkout</button>
-            </div>
-          </div>
+        <div class="ordersSection" style="text-align: center;"> 
+            <h2 id="orders1"></h2>
+            <h2 id="orders2"></h2>
+            <h2 id="orders3"></h2>
+            <h2 id="orders4"></h2>
+            <form action="" method="get">
+                <input type="button" value="orderAnother" class="orderBtn" onclick="addAnother()">
+            </form>
+        </div>
     </main>
 
     <footer>

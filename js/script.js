@@ -1,32 +1,11 @@
-// const pizzaSize= {
-//     small: 700,
-//     medi: 1000,
-//     large: 1200
-// };
-    // let order =  1;
-    // let grandTotal = 0;
-
-
-    // ensures the page does not refresh
-
 let button= document.querySelector('.orderBtn');
 button.addEventListener("click", function (x) {
     x.preventDefault(); })
 
-// hides the table
-
-  $("table").hide();
-  $(".additional-buttons").hide();
-  $(".additional-info").hide();
-  $(".btn.yes").hide();
-  $(".btn.no").hide();
-  $(".additional-info h4").hide();
-
-
   // selects the inputed elements
 
 let a = document.getElementById('selectSize1');
-let sizePizza = a.options[a.selectedIndex].value;
+let sizePizza = a.options[a.selectedIndex].text;
 let b = document.getElementById('selectToppings');
 let toppingsPizza = b.options[b.selectedIndex].value;
 // let c = document.getElementsByClass('selectSize');
@@ -103,6 +82,11 @@ function pizzaValue4(){
   }
 }
 
+function pizzaType(){
+  let g = document.getElementById("selectSize")
+  let pizzaType = g.options[g.selectedIndex].text;
+  return pizzaType;
+}
 // TOPPINGS
 
 function toppingsValue1(){
@@ -252,26 +236,59 @@ function crustValue4(){
 function orderValues1(){
   let final = parseInt(pizzaValue1()) + parseInt(toppingsValue1()) + parseInt(crustValue1());
   console.log(final);
-  return final;
+  if(Number.isNaN(final)){
+    return (document.getElementById("orders1").innerHTML += 
+    "<span> </span>");
+  }else if(!Number.isNaN(final)){
+    document.getElementById("orders1").innerHTML += 
+      "<span> Your Pizza Costs... </span>" + final;
+  }
 }
+
 function orderValues2(){
   let final = parseInt(pizzaValue2()) + parseInt(toppingsValue2()) + parseInt(crustValue2());
   console.log(final);
-  return final;
+  if(Number.isNaN(final)){
+    return (document.getElementById("orders2").innerHTML += 
+    "<span> </span>");
+  }else if(!Number.isNaN(final)){
+    document.getElementById("orders2").innerHTML += 
+      "<span> Your Pizza Costs... </span>" + final;
+  }
 }
+
 function orderValues3(){
   let final = parseInt(pizzaValue3()) + parseInt(toppingsValue3()) + parseInt(crustValue3());
   console.log(final);
-  return final;
+  if(Number.isNaN(final)){
+    return (document.getElementById("orders3").innerHTML += 
+    "<span> </span>");
+  }else if(!Number.isNaN(final)){
+    document.getElementById("orders3").innerHTML += 
+      "<span> Your Pizza Costs... </span>" + final;
+  }
 }
+
 function orderValues4(){
   let final = parseInt(pizzaValue4()) + parseInt(toppingsValue4()) + parseInt(crustValue4());
   console.log(final);
-  return final;
+  if(Number.isNaN(final)){
+    return (document.getElementById("orders4").innerHTML += 
+    "<span> </span>");
+  }else if(!Number.isNaN(final)){
+    document.getElementById("orders4").innerHTML += 
+      "<span> Your Pizza Costs... </span>" + final;
+  }
 }
-// console.log(orderValues());
-// function toppings(){
-//     alert(pizzaVal)
-//   }
 
-// console.log(toppings());
+
+
+// ORDERING A NEW ONE
+
+function addAnother(){
+  let order1= orderValues1();
+  let order2= orderValues2();
+  let order3= orderValues3();
+  let order4= orderValues4();
+
+}
