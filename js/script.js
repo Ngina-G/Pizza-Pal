@@ -312,17 +312,24 @@ function orderValues44(){
 
 
 // ORDERING A NEW ONE
- function finish(){
-   let  total = [parseInt(orderValues11()),parseInt(orderValues22()), parseInt(orderValues33()), parseInt(orderValues44())]; 
+function finishValues(){
+  let  total = [parseInt(orderValues11()), parseInt(orderValues22()), parseInt(orderValues33()), parseInt(orderValues44())]; 
+   for (let i = 0; i < total.length; i++) {
+    console.log(total[i]);
+    return(total[i]);  
+  }    
+}
 
-   for (let total = 0; total < cars.length; i++) {}
-
-   if(!Number.isNaN(orderValues11()) || !Number.isNaN(orderValues22()) || !Number.isNaN(orderValues33())|| !Number.isNaN(orderValues44())){
-  return orderValues11().hide, orderValues22().hide, orderValues33().hide;
-  }else {
-    return total;
-  }
- }
+//  function finish(){
+//    console.log(finishValues());
+//     // let grandTotal = finishValues();
+//     // if( !Number.isNaN(finishValues()) ){
+//     //   console.log(grandTotal);
+//     // }
+//     // else if(Number.isNaN(total[i])){
+//     //   return undefined;
+//     // }
+//   }
 
 function addAnother(){
   let order1= orderValues1() + "";
@@ -332,3 +339,6 @@ function addAnother(){
 }
 console.log(addAnother());
 
+function finish(){
+
+}
