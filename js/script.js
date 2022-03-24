@@ -240,22 +240,39 @@ function orderValues1(){
     return (document.getElementById("orders1").innerHTML += 
     "<span> </span>");
   }else if(!Number.isNaN(final)){
-    document.getElementById("orders1").innerHTML += 
-      "<span> Your Pizza Costs... </span>" + final;
+    document.getElementById("orders1").innerHTML += final;
+      /*"<span> Your Pizza Costs... </span>" +*/
+    return final;
+
   }
 }
+function orderValues11(){
+  let final = parseInt(pizzaValue1()) + parseInt(toppingsValue1()) + parseInt(crustValue1());
+  return (final);
+}
+
+// let orderTotal1= orderValues1();
+// let total1= orderValues1().orderValues11()
 
 function orderValues2(){
   let final = parseInt(pizzaValue2()) + parseInt(toppingsValue2()) + parseInt(crustValue2());
   console.log(final);
+
   if(Number.isNaN(final)){
     return (document.getElementById("orders2").innerHTML += 
     "<span> </span>");
   }else if(!Number.isNaN(final)){
     document.getElementById("orders2").innerHTML += 
-      "<span> Your Pizza Costs... </span>" + final;
+     final;
+     return final;
   }
+  return final;
 }
+function orderValues22(){
+  let final = parseInt(pizzaValue2()) + parseInt(toppingsValue2()) + parseInt(crustValue2());
+  return (final);
+}
+
 
 function orderValues3(){
   let final = parseInt(pizzaValue3()) + parseInt(toppingsValue3()) + parseInt(crustValue3());
@@ -265,8 +282,14 @@ function orderValues3(){
     "<span> </span>");
   }else if(!Number.isNaN(final)){
     document.getElementById("orders3").innerHTML += 
-      "<span> Your Pizza Costs... </span>" + final;
+     /* "<span> Your Pizza Costs... </span>" +*/ final;
+     return final;
+
   }
+}
+function orderValues33(){
+  let final = parseInt(pizzaValue3()) + parseInt(toppingsValue3()) + parseInt(crustValue3());
+  return (final);
 }
 
 function orderValues4(){
@@ -276,19 +299,36 @@ function orderValues4(){
     return (document.getElementById("orders4").innerHTML += 
     "<span> </span>");
   }else if(!Number.isNaN(final)){
+    final;
     document.getElementById("orders4").innerHTML += 
-      "<span> Your Pizza Costs... </span>" + final;
+      /*"<span> Your Pizza Costs... </span>" */ final;
+      return final;
   }
 }
-
+function orderValues44(){
+  let final = parseInt(pizzaValue4()) + parseInt(toppingsValue4()) + parseInt(crustValue4());
+  return(final);
+}
 
 
 // ORDERING A NEW ONE
+ function finish(){
+   let  total = [parseInt(orderValues11()),parseInt(orderValues22()), parseInt(orderValues33()), parseInt(orderValues44())]; 
+
+   for (let total = 0; total < cars.length; i++) {}
+
+   if(!Number.isNaN(orderValues11()) || !Number.isNaN(orderValues22()) || !Number.isNaN(orderValues33())|| !Number.isNaN(orderValues44())){
+  return orderValues11().hide, orderValues22().hide, orderValues33().hide;
+  }else {
+    return total;
+  }
+ }
 
 function addAnother(){
-  let order1= orderValues1();
-  let order2= orderValues2();
-  let order3= orderValues3();
-  let order4= orderValues4();
-
+  let order1= orderValues1() + "";
+  let order2= orderValues2() + "";
+  let order3= orderValues3() + "";
+  let order4= orderValues4() + "";
 }
+console.log(addAnother());
+
